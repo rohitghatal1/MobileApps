@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">MyNewJavaApp</string>
+    <string name="submitBtn">Save and Go</string>
+    <string-array name="nationalitydripdown">
+        <item>Nepalese</item>
+        <item>Indian</item>
+        <item>Pakistani</item>
+    </string-array>
+</resources>

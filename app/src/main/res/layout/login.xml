@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter some text"
+            android:textColor="@color/purple_700"
+            android:textSize="50dp" />
+    </TableRow>
+
+    <TableRow>
+        <LinearLayout
+            android:orientation="horizontal"
+            >
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/submitBtn"
+                android:layout_below="@id/textView"
+                android:id="@+id/nextBtn"
+                android:layout_x="0dp"
+                android:layout_y="75dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Back"
+                android:layout_below="@id/textView"
+                android:layout_toRightOf="@id/nextBtn"
+                android:layout_marginLeft="8dp"
+                android:id="@+id/nextBtn2"
+                android:layout_x="150dp"
+                android:layout_y="75dp"/>
+        </LinearLayout>
+
+    </TableRow>
+
+</TableLayout>

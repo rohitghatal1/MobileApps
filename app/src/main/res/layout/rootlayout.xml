@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="horizontal">
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Contact"
+           android:id="@+id/contactBtn"/>
+       <Button
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="About"
+           android:id="@+id/aboutBtn"/>
+   </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/displayFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/someText"
+        android:text="Some text"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/showDialogBtn"
+        android:layout_height="wrap_content"
+        android:text="show dialog"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:id="@+id/openCalculatorBtn"
+        android:layout_height="wrap_content"
+        android:text="Open calculator"/>
+
+</LinearLayout>
