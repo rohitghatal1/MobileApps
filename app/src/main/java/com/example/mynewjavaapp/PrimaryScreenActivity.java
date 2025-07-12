@@ -10,6 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class PrimaryScreenActivity extends AppCompatActivity {
     Button nextScreen;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,12 +27,13 @@ public class PrimaryScreenActivity extends AppCompatActivity {
 
         });
     }
-//    public void goToNextScreen(){
+
+    //    public void goToNextScreen(){
 //        Intent i = new Intent(this, SecondaryScreen.class);
 //        i.putExtra("Username", "Rohit G");
 //        startActivity(i);
 //    }
-    public void goBack(){
+    public void goBack() {
         Intent i = new Intent();
         i.putExtra("message", "Hello from second");
         setResult(2, i);
