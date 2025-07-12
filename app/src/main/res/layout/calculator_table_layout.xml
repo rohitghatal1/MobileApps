@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp">
 
     <EditText
@@ -11,47 +10,49 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter first number"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal" />
 
     <EditText
         android:id="@+id/editTextNumber2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Enter second number"
-        android:inputType="numberDecimal"/>
+        android:inputType="numberDecimal" />
 
     <TableLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:stretchColumns="*"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="16dp"
+        android:stretchColumns="*">
 
         <TableRow>
+
             <Button
                 android:id="@+id/btnAdd"
-                android:text="+"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="+" />
 
             <Button
                 android:id="@+id/btnSub"
-                android:text="-"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="-" />
         </TableRow>
 
         <TableRow>
+
             <Button
                 android:id="@+id/btnMul"
-                android:text="×"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="×" />
 
             <Button
                 android:id="@+id/btnDiv"
-                android:text="÷"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content" />
+                android:layout_height="wrap_content"
+                android:text="÷" />
         </TableRow>
     </TableLayout>
 
@@ -59,8 +60,8 @@
         android:id="@+id/textViewResult"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
         android:text="Result will be shown here"
         android:textSize="18sp"
-        android:textStyle="bold"
-        android:layout_marginTop="16dp"/>
+        android:textStyle="bold" />
 </LinearLayout>
