@@ -18,6 +18,7 @@ import androidx.fragment.app.FragmentTransaction;
 public class rootLayout extends AppCompatActivity {
     Button contactBtn, aboutBtn, showAlert, openCalculator;
     TextView text;
+
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -57,14 +58,14 @@ public class rootLayout extends AppCompatActivity {
         });
     }
 
-    public void setFragment (Fragment frag){
+    public void setFragment(Fragment frag) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.displayFragment, frag);
         fragmentTransaction.commit();
     }
 
-    public void showAlert(){
+    public void showAlert() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Delete");
         builder.setMessage("Are you sure you want to delete this?");
@@ -84,21 +85,21 @@ public class rootLayout extends AppCompatActivity {
         builder.show();
     }
 
-    public void showCalculator(){
+    public void showCalculator() {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setTitle("Calculator");
 
         LayoutInflater inflater = getLayoutInflater();
-        View view  = inflater.inflate(R.layout.calculator, null);
-       Button Add = view.findViewById(R.id.addBtn);
-        EditText firstNumField =  view.findViewById(R.id.firstNumber);
+        View view = inflater.inflate(R.layout.calculator, null);
+        Button Add = view.findViewById(R.id.addBtn);
+        EditText firstNumField = view.findViewById(R.id.firstNumber);
         EditText secondNumField = view.findViewById(R.id.secondNumber);
         TextView resultText = view.findViewById(R.id.resultField);
 
         Add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                int sum =  Integer.parseInt(firstNumField.getText().toString()) + Integer.parseInt(secondNumField.getText().toString());
+                int sum = Integer.parseInt(firstNumField.getText().toString()) + Integer.parseInt(secondNumField.getText().toString());
                 resultText.setText(sum + " result");
             }
         });
