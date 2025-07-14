@@ -13,3 +13,4 @@ public class LinearLayoutActivity extends AppCompatActivity {
         setContentView(R.layout.primaryscreen);
     }
 }
+

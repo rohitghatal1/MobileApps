@@ -15,10 +15,13 @@ public class sqliteActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sqlite_ex);
+
         // Initialize DB Helper
         myDbHelper = new MyDbHelper(this);
+
         // Bind UI elements
         edtId = findViewById(R.id.edtId);
         edtName = findViewById(R.id.edtName);
