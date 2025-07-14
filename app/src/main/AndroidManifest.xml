@@ -12,22 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyNewJavaApp"
         tools:targetApi="31" >
-<!--        <activity android:name=".LoginActivity"-->
-<!--            android:exported="true"-->
-<!--            >-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN"/>-->
-<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
-<!--        <activity android:name=".CalculatorActivity"-->
-<!--            android:exported="true"-->
-<!--            >-->
-<!--            <intent-filter>-->
-<!--                <action android:name="android.intent.action.MAIN"/>-->
-<!--                <category android:name="android.intent.category.LAUNCHER"/>-->
-<!--            </intent-filter>-->
-<!--        </activity>-->
         <activity android:name=".ImageGallery" android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -37,7 +21,6 @@
         <activity android:name=".HomeActivity"/>
         <activity android:name=".PrimaryScreenActivity"/>
         <activity android:name=".SecondaryScreen"/>
-<!--        <activity android:name=".firstLayout"/>-->
         <activity android:name=".secondLayout"/>
     </application>
 

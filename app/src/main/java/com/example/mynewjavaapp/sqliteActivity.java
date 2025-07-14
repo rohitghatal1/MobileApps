@@ -2,26 +2,20 @@ package com.example.mynewjavaapp;
 
 import android.database.Cursor;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.*;
-
 import androidx.appcompat.app.AppCompatActivity;
 
 public class sqliteActivity extends AppCompatActivity {
-
     EditText edtId, edtName, edtAddress;
     Button btnInsert, btnSelect, btnUpdate, btnDelete;
     TextView txtData;
     MyDbHelper myDbHelper;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.sqlite_ex);
-
         // Initialize DB Helper
         myDbHelper = new MyDbHelper(this);
-
         // Bind UI elements
         edtId = findViewById(R.id.edtId);
         edtName = findViewById(R.id.edtName);
@@ -31,7 +25,6 @@ public class sqliteActivity extends AppCompatActivity {
         btnUpdate = findViewById(R.id.btnUpdate);
         btnDelete = findViewById(R.id.btnDelete);
         txtData = findViewById(R.id.txtData);
-
         // Insert
         btnInsert.setOnClickListener(view -> {
             int id = Integer.parseInt(edtId.getText().toString());
@@ -40,7 +33,6 @@ public class sqliteActivity extends AppCompatActivity {
             myDbHelper.insertData(id, name, address);
             Toast.makeText(getApplicationContext(), "Data Inserted Successfully!", Toast.LENGTH_SHORT).show();
         });
-
         // Select
         btnSelect.setOnClickListener(view -> {
             Cursor cursor = myDbHelper.selectData();
@@ -56,7 +48,6 @@ public class sqliteActivity extends AppCompatActivity {
             }
             txtData.setText(builder.toString());
         });
-
         // Update
         btnUpdate.setOnClickListener(view -> {
             String id = edtId.getText().toString();
@@ -65,7 +56,6 @@ public class sqliteActivity extends AppCompatActivity {
             myDbHelper.updateData(id, name, address);
             Toast.makeText(getApplicationContext(), "Data Updated Successfully!", Toast.LENGTH_SHORT).show();
         });
-
         // Delete
         btnDelete.setOnClickListener(view -> {
             String id = edtId.getText().toString();
